@@ -43,7 +43,7 @@ public class UserController {
         String msg = "User register successfully";
         FacesContext.getCurrentInstance().addMessage(null, new FacesMessage(FacesMessage.SEVERITY_INFO, msg, msg));
         FacesContext.getCurrentInstance().getExternalContext().getFlash().setKeepMessages(true);
-        return "registration.jsp?faces-redirect=true";
+        return "registration.jsf?faces-redirect=true";
     }
     
 }
