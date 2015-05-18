@@ -6,6 +6,8 @@
 package tr.gov.ptt.gr1simplereg.mb;
 
 import javax.faces.application.FacesMessage;
+import javax.faces.bean.ManagedBean;
+import javax.faces.bean.RequestScoped;
 import javax.faces.context.FacesContext;
 import tr.gov.ptt.gr1simplereg.dto.User;
 
@@ -13,9 +15,15 @@ import tr.gov.ptt.gr1simplereg.dto.User;
  *
  * @author Administrator
  */
+
+@ManagedBean
+@RequestScoped
 public class UserController {
     private User registrationUser;
 
+    
+    public UserController (){}
+    
     public UserController(User registrationUser) {
         this.registrationUser = new User();
     }
